@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+</head>
+<link rel="stylesheet" href="bootstrap.min.css">
+<body id="body">
+    
+<style>
+.form-group{
+    width:40%;
+    margin:auto;
+}
+
+
+#website{
+
+    background-color:#808B96;
+    width:40%;
+    margin:auto;
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+
+}
+#website p{
+    color:#fcfeff;
+    font-size: 2rem;
+}
+#controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+@media(max-width:1064px){
+    .form-group{
+    width:70%;
+    margin:auto;
+}
+
+
+#website{
+
+
+width:70%;
+}
+
+@media(max-width:800px){
+    .form-group{
+    width:80%;
+    margin:auto;
+}
+
+
+#website{
+
+
+width:80%;
+}
+}
+}
+</style>
+
+
+
+
+<div class="form-group">
+    <label for="websiteName" class="form-label mt-4">Website Name</label>
+    <input type="" class="form-control" id="websiteName"  placeholder="Site name">
+  </div>
+
+  <div class="form-group">
+    <label for="websiteURL" class="form-label mt-4">Website URL</label>
+    <input type="" class="form-control" id="websiteURL"  placeholder="Site URL">
+  </div>
+
+ <center> <button id="adder" type="button" class="btn btn-secondary mt-4">Bookmark</button></center>
+
+
+<div id="allwebsites" class="mb-5">
+    <div id="website" class="mt-4">
+        <p>Google</p>
+        <div id="controls">
+            <a  href="https://www.google.com" target="blank" class="btn btn-outline-primary btn-sm mb-4">Visit</a>
+            <button type="button" class="btn btn-outline-danger btn-sm"  id="delete">Delete</button>
+    </div>
+    </div>
+</div>
+
+<script src="bookmarker.js"></script>
+</body>
+</html>
